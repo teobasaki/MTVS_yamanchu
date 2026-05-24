@@ -1,24 +1,188 @@
 # 야만추 / Yamanchu
 
-야만추는 야구 직관 경험을 기반으로 성향 카드, 실시간 응원 반응, 경기 후 매칭/코스 추천을 보여주는 발표용 MVP 데모 모음입니다.
+> 우리는 사람을 상품처럼 진열하지 않는다.  
+> 관계가 생길 수 있는 상황을 무대처럼 만든다.
 
-Yamanchu is a presentation MVP collection for a baseball stadium social experience: fan personality cards, live cheering reactions, and post-game matching/course recommendations.
+야만추는 **야구장에서 만남을 추구하다**의 줄임말입니다.  
+기존 데이팅 앱처럼 사진과 프로필을 넘기며 사람을 고르는 서비스가 아니라, 야구 직관이라는 강한 공동 경험 안에서 **같은 공간, 같은 순간, 같은 감정**을 공유한 사람들을 연결하는 소셜 매칭 MVP입니다.
 
-## 프로젝트 구성 / Project Structure
+이 저장소는 만추 Corporation의 첫 번째 서비스인 야만추를 설명하는 발표자료, 기획서, 그리고 3개의 발표용 데모를 포함합니다.
 
-| Folder | Description |
-| --- | --- |
-| `1-yamanchu-mvp-3d` | 3D stadium MVP flow from onboarding to matching and mock payment |
-| `2-yamanchu-live-demo` | Live cheering-seat demo with timeline, reactions, prediction, and report |
-| `3-yamanchu-postgame-demo` | Post-game course recommendation, AI chat, meetup, and payment mock |
-| `docs/ko` | Korean planning document and presentation files |
-| `archive/yamanchu-mvp-3d-legacy` | Preserved earlier MVP variant |
+## 기존 데이팅 앱의 문제
 
-## 실행 / Run
+대부분의 데이팅 앱은 사람을 정적인 프로필로 판단하게 만듭니다.
+
+- 사진이 매력적인가
+- 나이, 직업, 지역이 조건에 맞는가
+- 취미 키워드가 비슷한가
+- 짧은 자기소개가 그럴듯한가
+
+하지만 실제 관계는 프로필만으로 만들어지지 않습니다.  
+관계가 시작되는 순간에는 보통 **같은 상황을 겪고, 같은 순간에 반응하고, 그 감정이 대화로 이어지는 경험**이 있습니다.
+
+기존 데이팅 앱은 이 경험 데이터를 거의 보지 못합니다.  
+그래서 사람을 연결한다고 말하지만, 실제로는 사람을 카드처럼 진열하고 사용자가 빠르게 소비하게 만드는 구조에 가깝습니다.
+
+야만추는 이 질문에서 출발합니다.
+
+> 누가 더 좋아 보이는가?  
+> 가 아니라,  
+> **누가 나와 같은 순간을 함께 즐길 수 있는가?**
+
+## 만추 Corporation의 관점
+
+만추 Corporation은 만남을 단순한 매칭으로 보지 않습니다.
+
+사람은 하나의 **노드**이고, 만남은 노드와 노드 사이에 생기는 **관계 가능성의 가중치**입니다.  
+중요한 것은 "이 사람이 좋은 사람인가?"가 아니라, **"이 사람과 나 사이에 관계가 생길 가능성이 얼마나 높은가?"**입니다.
+
+그 가능성은 다음과 같은 경험 데이터에서 더 잘 드러납니다.
+
+- 같은 공간에 있었는가
+- 같은 순간에 반응했는가
+- 같은 감정을 공유했는가
+- 이후 대화가 자연스럽게 이어졌는가
+- 오프라인 경험으로 확장될 수 있는가
+
+만추 Corporation은 만남 시장을 단순 데이팅 시장이 아니라 **관계 가능성의 조율 시장**으로 봅니다.
+
+## 만추 Framework
+
+만추는 하나의 앱 이름이 아니라, 여러 취미와 상황에 적용 가능한 관계 경험 프레임워크입니다.
+
+| 서비스 | 의미 | 관계 데이터 |
+| --- | --- | --- |
+| 야만추 | 야구장에서 만남 추구 | 직관 반응, 응원 리듬, 경기 후 대화 |
+| 축만추 | 축구장에서 만남 추구 | 경기 몰입도, 응원 타이밍, 팀 팬덤 |
+| 배만추 | 배드민턴에서 만남 추구 | 협동 방식, 승부욕, 운동 매너 |
+| 요만추 | 요리에서 만남 추구 | 취향 표현, 대화 스타일, 공동 작업 |
+| 애만추 | 애니메이션에서 만남 추구 | 콘텐츠 취향, 감정 몰입 패턴 |
+| 메만추 | 메타버스 아카데미 적용 사례 | 가상 공간 상호작용, 참여 패턴 |
+
+핵심은 **성향 카드의 이동성과 데이터의 누적성**입니다.  
+야만추에서 발급받은 "클러치 응원형" 카드가 축만추로 이동하면 축구 경기에서의 반응 데이터가 더해지고, 배만추로 이동하면 협동 플레이 데이터가 추가됩니다.
+
+즉, 사용자의 카드는 가입할 때 한 번 만들고 끝나는 프로필이 아니라, 여러 경험을 지나며 진화하는 **라이브 성향 카드**입니다.
+
+## 왜 야구장인가
+
+스포츠 경기장은 감정의 흐름이 선명하게 드러나는 공간입니다.  
+특히 야구장은 홈런, 역전 찬스, 9회말 위기, 응원가, 파도타기, 경기 후 후토크처럼 사람의 반응이 자연스럽게 드러나는 순간이 많습니다.
+
+야만추에서 야구장은 단순한 배경이 아닙니다.  
+관계가 생길 수 있도록 설계된 **무대**입니다.
+
+## 첫 번째 서비스: 야만추
+
+야만추는 야구 직관 기반 소셜 매칭 서비스입니다.
+
+기존 데이팅 앱이 사진과 프로필 텍스트를 기반으로 사람을 판단한다면, 야만추는 경기 중 실제 감정 반응을 기반으로 사람을 연결합니다.
+
+- 홈런이 나왔을 때 같이 환호하는지
+- 응원 파도타기 때 같은 타이밍에 반응하는지
+- 지루한 경기 구간에서 어떻게 분위기를 유지하는지
+- 9회말 위기 상황에서 얼마나 몰입하는지
+- 경기 후 자연스럽게 대화가 이어지는지
+
+이 데이터는 사용자의 성향 카드에 계속 반영됩니다.  
+야만추의 성향 카드는 정적인 프로필이 아니라, 실제 경기 경험을 통해 업데이트되는 관계 데이터입니다.
+
+## 발표 구성
+
+아래는 발표 스크립트 흐름에 맞춘 슬라이드별 설명입니다.
+
+### Slide 1. 만추 Corporation
+
+**핵심 문구**  
+만남을 데이터로 정의하고, 관계 가능성을 조율하는 회사
+
+**설명**  
+만추 Corporation은 단순한 데이팅 앱 회사가 아닙니다. 사람과 사람이 같은 공간에 있었는지, 같은 순간에 반응했는지, 같은 감정을 공유했는지, 그리고 이후 관계가 이어졌는지를 데이터로 해석합니다.
+
+### Slide 2. 만남이란 무엇인가?
+
+**핵심 문구**  
+사람은 하나의 노드이고, 만남은 노드와 노드 사이에 생기는 관계의 가중치다.
+
+**설명**  
+기존 시장은 사람을 개체 단위로 평가합니다. 만추는 사람 자체보다 두 사람 사이에 생길 수 있는 관계 가능성에 집중합니다. 그래서 만남 시장을 "관계 가능성의 조율"로 리포지셔닝합니다.
+
+### Slide 3. 만추 Framework
+
+**핵심 문구**  
+하나의 카드는 여러 경험을 지나며 진화한다.
+
+**설명**  
+야만추는 만추 Framework의 첫 서비스입니다. 축만추, 배만추, 요만추, 애만추로 확장될 수 있으며, 각 서비스에서 쌓인 경험 데이터는 하나의 성향 카드에 누적됩니다.
+
+### Slide 4. 왜 스포츠 직관인가?
+
+**핵심 문구**  
+스포츠는 응축된 감정 에너지를 안전하게 표출하는 사회적 창구다.
+
+**설명**  
+스포츠 경기장에서는 환호, 아쉬움, 긴장, 몰입이 자연스럽게 드러납니다. 야구장은 그 감정의 리듬이 특히 선명하고, 경기 전/중/후의 관계 경험을 설계하기 좋은 공간입니다.
+
+### Slide 5. 첫 번째 서비스: 야만추
+
+**핵심 문구**  
+사진과 프로필이 아니라 경기 중 감정 반응으로 연결한다.
+
+**설명**  
+야만추는 야구장에서의 실제 반응을 기반으로 사람을 연결합니다. 같은 경기를 보고, 같은 순간에 반응하고, 경기 후 대화로 이어지는 흐름 자체가 핵심 경험입니다.
+
+### Slide 6. User Flow Architecture
+
+**핵심 문구**  
+성향 카드 발급 -> 야구장 오픈월드 -> NPC 상호작용 -> 밸런스 게임 -> 직관 응원석 -> 감정 동조율 리포트 -> 경기 후 연결
+
+**설명**  
+야만추의 흐름은 단순 매칭이 아닙니다. 경기 전 성향 카드, 경기 중 응원 반응, 경기 후 연결까지 이어지는 관계 경험 아키텍처입니다.
+
+### Slide 7. Demo 구현
+
+**핵심 문구**  
+핵심 경험이 끊기지 않는 단독 시연형 MVP
+
+**설명**  
+이번 MVP는 발표자가 직접 시연할 수 있도록 구성했습니다. 실제 로그인, 결제, KBO API, GPT API, 멀티플레이는 제외했지만, 성향 카드, 오픈월드, 밸런스 게임, 응원석, 감정 리포트, 경기 후 연결 흐름은 끊기지 않게 구현했습니다.
+
+### Slide 8. 직관 Pain Point 해결
+
+**핵심 문구**  
+야만추는 매칭 앱을 넘어 직관 경험 자체를 개선하는 서비스로 확장된다.
+
+**설명**  
+근처 성향 매칭 알림, 좌석 기반 음식 배달, 구단 마스코트 다마고치 같은 기능으로 직관 현장의 불편을 해결하고, 제휴와 광고 기반 수익 모델로 확장할 수 있습니다.
+
+### Slide 9. 비수기 공략
+
+**핵심 문구**  
+야구 비수기에는 사용자를 다른 만추 서비스로 라우팅한다.
+
+**설명**  
+야구 비수기인 11월부터 2월까지 사용자가 이탈하는 대신, 축만추나 배만추 같은 다른 서비스로 이동할 수 있습니다. 야만추에서 쌓인 성향 데이터는 다른 취미 서비스에서도 이어집니다.
+
+### Slide 10. Closing
+
+**핵심 문구**  
+우리는 사람을 상품처럼 진열하지 않는다. 관계가 생길 수 있는 상황을 무대처럼 만든다.
+
+**설명**  
+만추 Corporation은 관계가 생길 조건을 발견하고, 그 가능성이 자연스럽게 커지도록 설계합니다. 야만추는 그 첫 번째 적용 사례입니다.
+
+## 데모 구성
+
+| Folder | Demo | Description |
+| --- | --- | --- |
+| `1-yamanchu-mvp-3d` | MVP 3D Demo | 성향 카드 발급, 3D 야구장, NPC 상호작용, 밸런스 게임, 채팅, 결제 Mock |
+| `2-yamanchu-live-demo` | Live Cheering Demo | 경기 타임라인, 이모티콘 반응, 파도타기, 예측 배팅, 홈런 연출, 감정 리포트 |
+| `3-yamanchu-postgame-demo` | Post-Game Demo | 경기 후 코스 추천, AI 상담 Mock, 정모 커뮤니티, 제휴 결제 Mock |
+| `archive/yamanchu-mvp-3d-legacy` | Legacy Demo | 이전 MVP 변형 보존 |
+
+## 실행 방법
 
 각 데모 폴더에서 의존성을 설치하고 Vite 개발 서버를 실행합니다.
-
-Install dependencies and run the Vite dev server inside each demo folder.
 
 ```bash
 cd 1-yamanchu-mvp-3d
@@ -38,28 +202,22 @@ npm install
 npm run dev
 ```
 
-## 문서 / Documentation
-
-- Korean: each demo folder has `README.md`.
-- English: each demo folder has `README.en.md`.
-- Planning/presentation files are stored under `docs/ko`.
-
-### 발표 자료 / Presentation Materials
+## 발표 자료
 
 - [야만추 Day 1 발표자료](docs/ko/presentations/야만추_Day1_ppt.pptx)
 - [만추 Corporation Day 2 발표자료](docs/ko/presentations/만추_Corporation_Day2.pptx)
 - [만추 Corporation Demo 발표자료](3-yamanchu-postgame-demo/만추_Corporation_Demo.pptx)
+- [만추 Corporation 발표 스크립트](docs/ko/presentations/manchu_corporation_presentation_script.md)
 - [야만추 기획서](docs/ko/planning/야만추_기획서.docx)
 
-### Presentation Files
+## MVP 구현 범위
 
-- [Yamanchu Day 1 deck](docs/ko/presentations/야만추_Day1_ppt.pptx)
-- [Manchu Corporation Day 2 deck](docs/ko/presentations/만추_Corporation_Day2.pptx)
-- [Manchu Corporation demo deck](3-yamanchu-postgame-demo/만추_Corporation_Demo.pptx)
-- [Yamanchu planning document](docs/ko/planning/야만추_기획서.docx)
+이 저장소의 데모는 발표용 프로토타입입니다.
 
-## 구현 범위 / Scope
-
-- Frontend-only presentation demos
-- No production backend, database, real payment, or live multiplayer
-- Mocked user flows and sample data for pitching and demo purposes
+- 프론트엔드 단독 구현
+- 실제 로그인 없음
+- 실제 결제 없음
+- 실제 KBO API 연동 없음
+- 실제 GPT API 호출 없음
+- 실시간 멀티플레이 없음
+- 발표 흐름 검증을 위한 Mock 데이터 사용
