@@ -180,6 +180,16 @@
 | `3-yamanchu-postgame-demo` | Post-Game Demo | 경기 후 코스 추천, AI 상담 Mock, 정모 커뮤니티, 제휴 결제 Mock |
 | `archive/yamanchu-mvp-3d-legacy` | Legacy Demo | 이전 MVP 변형 보존 |
 
+## 데모 스크린샷
+
+전체 스크린샷은 [`demo_screenshot/`](demo_screenshot) 폴더에 정리되어 있습니다.  
+아래 이미지는 각 데모 흐름을 빠르게 이해하기 위한 대표 장면입니다.
+
+| MVP 3D Demo | Live Cheering Demo | Post-Game Demo |
+| --- | --- | --- |
+| ![Yamanchu landing screen](demo_screenshot/screenshot-01.png) | ![Live cheering seat demo](demo_screenshot/screenshot-17.png) | ![Post-game hub](demo_screenshot/screenshot-28.png) |
+| ![Personality card result](demo_screenshot/screenshot-07.png) | ![Prediction betting result](demo_screenshot/screenshot-22.png) | ![Post-game date course](demo_screenshot/screenshot-30.png) |
+
 ## 실행 방법
 
 각 데모 폴더에서 의존성을 설치하고 Vite 개발 서버를 실행합니다.
@@ -412,6 +422,16 @@ Manchu Corporation identifies the conditions under which relationships can form 
 | `2-yamanchu-live-demo` | Live Cheering Demo | Timeline, emoji reaction, stadium wave, prediction betting, home run sequence, emotional report |
 | `3-yamanchu-postgame-demo` | Post-Game Demo | Post-game course recommendation, AI consultation mock, meetup community, partner payment mock |
 | `archive/yamanchu-mvp-3d-legacy` | Legacy Demo | Preserved earlier MVP variant |
+
+## Demo Screenshots
+
+All screenshots are stored in [`demo_screenshot/`](demo_screenshot).  
+The gallery below highlights the main flow across the three demos.
+
+| MVP 3D Demo | Live Cheering Demo | Post-Game Demo |
+| --- | --- | --- |
+| ![Yamanchu landing screen](demo_screenshot/screenshot-01.png) | ![Live cheering seat demo](demo_screenshot/screenshot-17.png) | ![Post-game hub](demo_screenshot/screenshot-28.png) |
+| ![Personality card result](demo_screenshot/screenshot-07.png) | ![Prediction betting result](demo_screenshot/screenshot-22.png) | ![Post-game date course](demo_screenshot/screenshot-30.png) |
 
 ## Run
 
