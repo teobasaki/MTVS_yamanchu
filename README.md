@@ -204,6 +204,12 @@ npm run dev
 
 ## 발표 자료
 
+### 슬라이드 미리보기
+
+| Yamanchu Day 1 | Manchu Corporation Day 2 | Manchu Corporation Demo |
+| --- | --- | --- |
+| [![Yamanchu Day 1 preview](assets/readme/slides/yamanchu-day1-preview.png)](docs/ko/presentations/야만추_Day1_ppt.pptx) | [![Manchu Corporation Day 2 preview](assets/readme/slides/manchu-corporation-day2-preview.png)](docs/ko/presentations/만추_Corporation_Day2.pptx) | [![Manchu Corporation Demo preview](assets/readme/slides/manchu-corporation-demo-preview.png)](3-yamanchu-postgame-demo/만추_Corporation_Demo.pptx) |
+
 - [야만추 Day 1 발표자료](docs/ko/presentations/야만추_Day1_ppt.pptx)
 - [만추 Corporation Day 2 발표자료](docs/ko/presentations/만추_Corporation_Day2.pptx)
 - [만추 Corporation Demo 발표자료](3-yamanchu-postgame-demo/만추_Corporation_Demo.pptx)
@@ -221,3 +227,236 @@ npm run dev
 - 실제 GPT API 호출 없음
 - 실시간 멀티플레이 없음
 - 발표 흐름 검증을 위한 Mock 데이터 사용
+
+---
+
+# English Version
+
+## Yamanchu
+
+> We do not display people like products.  
+> We design situations where relationships can naturally emerge.
+
+Yamanchu means **"seeking connection at a baseball stadium."**  
+It is not a dating app where users judge people by photos and static profile text. Yamanchu is a social matching MVP that connects people through a shared live baseball experience: **same place, same moment, same emotion**.
+
+This repository contains the presentation decks, planning document, script, and three frontend demos for Yamanchu, the first service from Manchu Corporation.
+
+## The Problem With Existing Dating Apps
+
+Most dating apps ask users to evaluate people through static profile signals.
+
+- Is the photo attractive?
+- Do age, job, and location match my conditions?
+- Do we share similar hobby keywords?
+- Does the short bio sound appealing?
+
+But real relationships rarely begin from profile data alone.  
+They often begin when two people go through the same situation, react to the same moment, and turn that shared emotion into conversation.
+
+Existing dating apps miss this experience data.  
+They claim to connect people, but structurally they often display people like cards and encourage fast consumption.
+
+Yamanchu starts from a different question.
+
+> Not "Who looks better?"  
+> but  
+> **"Who can enjoy the same moment with me?"**
+
+## Manchu Corporation's View
+
+Manchu Corporation does not define connection as simple matching.
+
+A person is a **node**, and a meeting is the **weighted relationship potential** between two nodes.  
+The important question is not "Is this person good?" but **"How likely is it that a relationship can form between this person and me?"**
+
+That potential is better captured through experience data.
+
+- Were we in the same place?
+- Did we react to the same moment?
+- Did we share the same emotion?
+- Did the conversation continue naturally afterward?
+- Can the connection expand into an offline experience?
+
+Manchu Corporation repositions the meeting market as a market for **orchestrating relationship potential**, not just dating or community discovery.
+
+## The Manchu Framework
+
+Manchu is not just one app. It is a relationship-experience framework that can be applied across different hobbies and social contexts.
+
+| Service | Meaning | Relationship Data |
+| --- | --- | --- |
+| Yamanchu | Seeking connection at baseball games | Live reactions, cheering rhythm, post-game conversation |
+| Chukmanchu | Seeking connection at soccer games | Match immersion, cheering timing, team fandom |
+| Baemanchu | Seeking connection through badminton | Cooperation style, competitiveness, sportsmanship |
+| Yomanchu | Seeking connection through cooking | Taste expression, conversation style, collaboration |
+| Aemanchu | Seeking connection through animation | Content preference, emotional immersion patterns |
+| Memanchu | Metaverse academy application case | Virtual-space interaction, participation patterns |
+
+The key idea is **card portability and data accumulation**.  
+A "clutch cheering type" card issued in Yamanchu can move into Chukmanchu, where soccer match reactions are added. It can then move into Baemanchu, where cooperation and play-style data are added.
+
+The card is not a one-time profile.  
+It is a **live personality card** that evolves through multiple shared experiences.
+
+## Why Baseball Stadiums
+
+Sports stadiums are one of the clearest places to observe emotional flow.  
+Baseball is especially useful because it has visible moments of tension and release: home runs, comeback chances, bottom-of-the-ninth pressure, chants, stadium waves, and post-game conversation.
+
+In Yamanchu, the baseball stadium is not just a background.  
+It is a **stage designed for relationships to emerge**.
+
+## The First Service: Yamanchu
+
+Yamanchu is a baseball-stadium-based social matching service.
+
+Instead of connecting people through photos and profile text, Yamanchu connects people through emotional reactions during the game.
+
+- Did we cheer together when a home run happened?
+- Did we react at the same timing during the stadium wave?
+- How did we keep the mood during a slow inning?
+- How immersed were we during a ninth-inning crisis?
+- Did the conversation continue naturally after the game?
+
+These signals continuously update the user's personality card.  
+Yamanchu's card is not a static profile. It is relationship data updated by real stadium experience.
+
+## Presentation Flow
+
+### Slide 1. Manchu Corporation
+
+**Core Message**  
+A company that defines meetings as data and orchestrates relationship potential.
+
+**Explanation**  
+Manchu Corporation is not just a dating app company. It interprets whether people were in the same space, reacted to the same moment, shared the same emotion, and continued the relationship afterward.
+
+### Slide 2. What Is a Meeting?
+
+**Core Message**  
+A person is a node, and a meeting is the weighted relationship potential between nodes.
+
+**Explanation**  
+Existing services evaluate people as individual objects. Manchu focuses on the relationship potential between two people and reframes the market around orchestrating that potential.
+
+### Slide 3. Manchu Framework
+
+**Core Message**  
+One card evolves as it passes through multiple experiences.
+
+**Explanation**  
+Yamanchu is the first service in the Manchu Framework. The same card can expand into soccer, badminton, cooking, animation, and metaverse contexts while accumulating new experience data.
+
+### Slide 4. Why Live Sports?
+
+**Core Message**  
+Sports are a social outlet where compressed emotional energy can be expressed safely.
+
+**Explanation**  
+Sports stadiums naturally reveal joy, disappointment, tension, and immersion. Baseball provides a strong rhythm for designing relationship experiences before, during, and after the game.
+
+### Slide 5. First Service: Yamanchu
+
+**Core Message**  
+Connect through emotional reactions during the game, not photos and profiles.
+
+**Explanation**  
+Yamanchu connects people through real reactions at the stadium. Watching the same game, reacting to the same moment, and continuing the conversation afterward is the core experience.
+
+### Slide 6. User Flow Architecture
+
+**Core Message**  
+Personality card -> baseball open world -> NPC interaction -> balance game -> live cheering seats -> emotional sync report -> post-game connection
+
+**Explanation**  
+Yamanchu is not a single matching screen. It is a relationship experience architecture that connects pre-game identity, in-game reactions, and post-game offline continuation.
+
+### Slide 7. Demo Implementation
+
+**Core Message**  
+A standalone MVP where the core experience does not break.
+
+**Explanation**  
+The demo excludes real login, payment, KBO API, GPT API, and live multiplayer. Instead, it preserves the full narrative flow: personality card, open world, balance game, cheering seat, emotional report, and post-game connection.
+
+### Slide 8. Solving Stadium Pain Points
+
+**Core Message**  
+Yamanchu can expand beyond matching into improving the live stadium experience itself.
+
+**Explanation**  
+Future features can include nearby personality-match alerts, seat-based food delivery, and team mascot companion mechanics, enabling partnership and advertising revenue models.
+
+### Slide 9. Off-Season Strategy
+
+**Core Message**  
+During baseball's off-season, users can be routed into other Manchu services.
+
+**Explanation**  
+Instead of losing users from November to February, Yamanchu can move users into Chukmanchu, Baemanchu, or other services while carrying over their accumulated personality data.
+
+### Slide 10. Closing
+
+**Core Message**  
+We do not display people like products. We design situations where relationships can naturally emerge.
+
+**Explanation**  
+Manchu Corporation identifies the conditions under which relationships can form and designs experiences that increase that possibility. Yamanchu is the first application of that framework.
+
+## Demo Structure
+
+| Folder | Demo | Description |
+| --- | --- | --- |
+| `1-yamanchu-mvp-3d` | MVP 3D Demo | Personality card, 3D stadium, NPC interaction, balance game, chat, mock payment |
+| `2-yamanchu-live-demo` | Live Cheering Demo | Timeline, emoji reaction, stadium wave, prediction betting, home run sequence, emotional report |
+| `3-yamanchu-postgame-demo` | Post-Game Demo | Post-game course recommendation, AI consultation mock, meetup community, partner payment mock |
+| `archive/yamanchu-mvp-3d-legacy` | Legacy Demo | Preserved earlier MVP variant |
+
+## Run
+
+Install dependencies and run the Vite dev server inside each demo folder.
+
+```bash
+cd 1-yamanchu-mvp-3d
+npm install
+npm run dev
+```
+
+```bash
+cd 2-yamanchu-live-demo
+npm install
+npm run dev -- --port 5183
+```
+
+```bash
+cd 3-yamanchu-postgame-demo
+npm install
+npm run dev
+```
+
+## Presentation Materials
+
+### Slide Previews
+
+| Yamanchu Day 1 | Manchu Corporation Day 2 | Manchu Corporation Demo |
+| --- | --- | --- |
+| [![Yamanchu Day 1 preview](assets/readme/slides/yamanchu-day1-preview.png)](docs/ko/presentations/야만추_Day1_ppt.pptx) | [![Manchu Corporation Day 2 preview](assets/readme/slides/manchu-corporation-day2-preview.png)](docs/ko/presentations/만추_Corporation_Day2.pptx) | [![Manchu Corporation Demo preview](assets/readme/slides/manchu-corporation-demo-preview.png)](3-yamanchu-postgame-demo/만추_Corporation_Demo.pptx) |
+
+- [Yamanchu Day 1 deck](docs/ko/presentations/야만추_Day1_ppt.pptx)
+- [Manchu Corporation Day 2 deck](docs/ko/presentations/만추_Corporation_Day2.pptx)
+- [Manchu Corporation demo deck](3-yamanchu-postgame-demo/만추_Corporation_Demo.pptx)
+- [Manchu Corporation presentation script](docs/ko/presentations/manchu_corporation_presentation_script.md)
+- [Yamanchu planning document](docs/ko/planning/야만추_기획서.docx)
+
+## MVP Scope
+
+This repository contains presentation prototypes.
+
+- Frontend-only implementation
+- No real login
+- No real payment
+- No KBO API integration
+- No GPT API call
+- No real-time multiplayer
+- Mock data used to validate the presentation flow
