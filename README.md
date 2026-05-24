@@ -44,6 +44,20 @@ npm run dev
 - English: each demo folder has `README.en.md`.
 - Planning/presentation files are stored under `docs/ko`.
 
+### 발표 자료 / Presentation Materials
+
+- [야만추 Day 1 발표자료](docs/ko/presentations/야만추_Day1_ppt.pptx)
+- [만추 Corporation Day 2 발표자료](docs/ko/presentations/만추_Corporation_Day2.pptx)
+- [만추 Corporation Demo 발표자료](3-yamanchu-postgame-demo/만추_Corporation_Demo.pptx)
+- [야만추 기획서](docs/ko/planning/야만추_기획서.docx)
+
+### Presentation Files
+
+- [Yamanchu Day 1 deck](docs/ko/presentations/야만추_Day1_ppt.pptx)
+- [Manchu Corporation Day 2 deck](docs/ko/presentations/만추_Corporation_Day2.pptx)
+- [Manchu Corporation demo deck](3-yamanchu-postgame-demo/만추_Corporation_Demo.pptx)
+- [Yamanchu planning document](docs/ko/planning/야만추_기획서.docx)
+
 ## 구현 범위 / Scope
 
 - Frontend-only presentation demos
