@@ -8,6 +8,13 @@
 
 이 저장소는 만추 Corporation의 첫 번째 서비스인 야만추를 설명하는 발표자료, 기획서, 그리고 3개의 발표용 데모를 포함합니다.
 
+## 지적재산권 및 사용 제한
+
+이 저장소는 포트폴리오, 발표, 검토 목적의 공개 저장소이며 오픈소스가 아닙니다.  
+야만추/Yamanchu, 만추/Manchu, 만추 Framework, 서비스 기획, 발표자료, 문서, 코드, UI/UX, 데모 자산, 스크린샷 및 관련 아이디어의 구체적 표현은 권리자에게 귀속됩니다.
+
+권리자의 사전 서면 허가 없이 본 저장소 또는 그 실질적 일부를 복제, 수정, 재배포, 공개 게시, 상업적으로 이용하거나 파생 서비스를 제작할 수 없습니다. 자세한 조건은 [`LICENSE`](LICENSE)를 확인하세요.
+
 ## 기존 데이팅 앱의 문제
 
 대부분의 데이팅 앱은 사람을 정적인 프로필로 판단하게 만듭니다.
@@ -251,6 +258,13 @@ Yamanchu means **"seeking connection at a baseball stadium."**
 It is not a dating app where users judge people by photos and static profile text. Yamanchu is a social matching MVP that connects people through a shared live baseball experience: **same place, same moment, same emotion**.
 
 This repository contains the presentation decks, planning document, script, and three frontend demos for Yamanchu, the first service from Manchu Corporation.
+
+## Intellectual Property and Usage Restrictions
+
+This repository is publicly viewable for portfolio, presentation, and review purposes only. It is not open source.  
+Yamanchu, 야만추, Manchu, 만추, the Manchu Framework, service planning, presentation materials, documentation, source code, UI/UX, demo assets, screenshots, and concrete expressions of the related concepts are owned by the rights holder.
+
+You may not copy, modify, redistribute, publicly republish, commercially use, or create derivative services from this repository or any substantial part of it without prior written permission from the rights holder. See [`LICENSE`](LICENSE) for details.
 
 ## The Problem With Existing Dating Apps
 
